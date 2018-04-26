@@ -1,0 +1,23 @@
+{"token_type":"Bearer","expires_in":31535999,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIzNGJhZDg3YWYyMDI2ZTE5MDJlMDMyYmM1YmE4NjdlNzJlZGVkOGNlZTUyYWJjNjg5MGRlNzliN2U4OWY3NDE4MGQ2OTZmZDE3OGY3OTJmIn0.eyJhdWQiOiIyIiwianRpIjoiMjM0YmFkODdhZjIwMjZlMTkwMmUwMzJiYzViYTg2N2U3MmVkZWQ4Y2VlNTJhYmM2ODkwZGU3OWI3ZTg5Zjc0MTgwZDY5NmZkMTc4Zjc5MmYiLCJpYXQiOjE1MjQyNTE5NjgsIm5iZiI6MTUyNDI1MTk2OCwiZXhwIjoxNTU1Nzg3OTY3LCJzdWIiOiIzIiwic2NvcGVzIjpbIioiXX0.Q3s8oamJ2-zBWqwQvXMo5IX-sPlie5S7onSO5dB-Vh1bd33M6km6ECI0DbhnIUB5_E8JgCyvV2AtRnu0Rha-bvIkLiejqvhENZgdiaJJwSefhAtyNMOF1HIGRE8KdP4yFhQYN9lVrg1UOZNVchHZ23KGBGXpHflQ2xqkrHfzw3wX8JXVhQKltsum_BCeymbM-CRK14_HL9JL6iJ2g5BMkQtdvD9X6-iKAfdbvIahyZalD_Mp6JXSJQndz8xsWuyqC-yBrig281TNB4mggqfJsk1L5mfzM2FX_fZruN6PnX9VyL157DWVfjgfZ2P33whe-uOEc9BwNZeruQ9kTaLjqwDSyAi9WaEuajpV4U1m4rxEeNfGAX0su92PRQmA_OYolxOxH9IuNzDVrAp7z3l7EPA6QifmNXdbAjeBZA64Pd95y1SbOXbzRdOJlMPX6eE_Hik-CkJTYt4xtGmYNhrpklRG-p44a1fbVntKy1K3ZsbRLYdbyWvW388gu_GJAZnOJFUqm7AkiPf5QEG_GDQNOqVT_NTRVrV3WAfiArSgetITahmVnHM-8oj-J8lmXTO31lUHvHqfVo6ysYNN1eKZVP-0a_cyBzSRHMVQQKwAJlWCu-7bRTZSZwAsXDgJs-FGEszva7ENy0yuSc2bsKFJAnK6BFL5THnbo45rENJ0pdU","refresh_token":"def50200fe412111ae4a11effe3444f710e95a62a9f8900e23bcf0f5d3d6c4ce73ded2e88ad2c02a347fb97b06e8460a7d09ae928a27177a159ca13fd369c8f1b31768a51a7199a7032c893d4b0666e118d9b9028ed15d43e83d008f11db5aa19301fe0e80dd41ae931172aa6af91fb19129433395132e6c281a6b269004acff48cb76f06fe7050b33976498ca162440f798c3c26573c19de778da7843af46816a30f3bcd642228a9da80779c50b5f3a2c1f125905d9bce4b6eb3796fbe3836eef38c5910d91a07f6775ca1078a81e004691dcc20f5afe9ec3d1bbe9b37a0f91cf23efb6c8fb87c80efbad3ddb50e9be6ae939f62e8719f85c4e0ef87f4ff17f9a3bd82d6b9999f924f38b85397c274c09bdf5c9a13427568ff35fdb571c9b6eef3445eea662c03e987b6e6071028660224fbe8188afe3035bc03209f4e99bc66c8a635ffd35775881352e1eec70cceb225fd0eb349f061c201387c5e5ecd71d657f"}{
+    "message": "Cannot modify header information - headers already sent by (output started at H:\\www\\htdocs\\laravel\\Karateka\\vendor\\symfony\\http-foundation\\Response.php:1276)",
+    "exception": "ErrorException",
+    "file": "H:\\www\\htdocs\\laravel\\Karateka\\public\\index.php",
+    "line": 69,
+    "trace": [
+        {
+            "function": "handleError",
+            "class": "Illuminate\\Foundation\\Bootstrap\\HandleExceptions",
+            "type": "->"
+        },
+        {
+            "file": "H:\\www\\htdocs\\laravel\\Karateka\\public\\index.php",
+            "line": 69,
+            "function": "header"
+        },
+        {
+            "file": "H:\\www\\htdocs\\laravel\\Karateka\\server.php",
+            "line": 21,
+            "function": "require_once"
+        }
+    ]
+}
