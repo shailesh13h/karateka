@@ -4,7 +4,7 @@ namespace App\Http\Controllers\api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Model\Karateka;
+use App\Model\Karate_ka;
 
 class KaratekasController extends Controller
 {
@@ -27,7 +27,7 @@ class KaratekasController extends Controller
      */
     public function index(Request $request)
     {
-        return Karateka::find($request->id);
+        return Karate_ka::find($request->id);
     }
 
     /**

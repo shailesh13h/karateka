@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Model;
+namespace App\Model\Karateka;
 
 
+
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
-class Karateka extends Model
+class Karate_ka extends Model
 {
 
     protected $table = 'karate_ka';
@@ -27,7 +29,6 @@ class Karateka extends Model
         'CONTACT_MO',
         'ADDRESS1',
         'EMAIL',
-        'TITLE',
         'GRNUMBER',
         'MEMBER_CODE',
 
@@ -35,7 +36,10 @@ class Karateka extends Model
 
 
 
+    public function renewal_Details(){
 
+        return $this->hasMany(Renewal_dtl::class,'KARATE_KA_ID','KARATE_KA_ID');
+    }
 
 
 }

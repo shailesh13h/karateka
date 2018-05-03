@@ -3,7 +3,7 @@
 
 use Illuminate\Http\Request;
 
-
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,16 +20,21 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// token routes
+
+Route::middleware('auth:api')->group(function (){
+
+     Route::post('logout','api\LoginController@logout');
 
 
-Route::apiResource('/karateka','api\KaratekasController');
-
-
-    Route::post('/login','api\LoginController@login');
-
-
-
-Route::get('/test',function(){
-
-    return response([1,2,3,4]);
 });
+
+Route::post('/refresh','api\LoginController@refresh');
+
+Route::post('/login','api\LoginController@login');
+
+
+
+Route::apiResource('/karateka','api\HomePageController');
+
+Route::post('/getDetails','api\HomePageController@getDetails');

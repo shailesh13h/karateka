@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Model\Karate_ka;
+use App\Model\Renewal_dtl;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
@@ -63,4 +65,11 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    public function renewal(){
+
+        return $this->hasMany(Renewal_dtl::class);
+    }
+
+
 }
